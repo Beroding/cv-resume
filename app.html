@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        * {
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: antiquewhite;
+            margin: 0px auto;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        header {
+            position: fixed;
+        }
+        .nav-bar {
+            background-color: black;
+            width: 100%;
+            position: sticky;
+            padding: 15px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            transition: .5s;
+        }
+        .logo {
+            color: white;
+            font-size: 30px;
+        }
+
+        ul li{
+            display: inline-block;
+            margin-left: 100px;
+        }
+        ul li a {
+            color: white;
+        }
+        nav a:hover {
+            color: lightblue;
+        }
+        nav a.active {
+            color: lightblue;
+        }
+        section{
+            background-color: #1f242d;
+            color: antiquewhite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 100px;
+            padding-left: 100px;
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+        section:nth-child(odd){
+            background-color: #323946;
+        }
+        .opening {
+            float: left;
+            width: 50%;
+        }
+        .myself {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            margin-left: 25px;
+        }
+        .p {
+            font-size: 15px;
+        }
+        .opening img {
+            width: 150px;
+            height: 150px;
+        }
+        .content {
+            float: right;
+            width: 50%;
+        }
+        .quarter1 {
+            display: inline-block;
+            padding-bottom: 20px;
+            height: 25%;
+        }
+        .quarter1 a {
+            color: black;
+            background-color: antiquewhite;
+            font-weight: bold;
+            padding: 7px;
+            border-radius: 30px;
+        }
+        .quarter2 {
+            padding-top: 100px;
+        }
+        .quarter2 .experiences {
+            display: inline-block;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .experiences {
+            display: none;
+        }
+        section header {
+            background-color: yellow;
+        }
+        .half1 {
+            width: 50%;
+            display: block;
+        }
+        .half2 {
+            width: 50%;
+            font-size: 10px;
+            margin-bottom: 30vh;
+            padding-right: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+        <div class="nav">
+           <a href="#" class="logo">Beroding.</a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li style="padding-left: 350px;"><a href="#project">Project</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <section id="about" class="about">
+        <div class="opening">
+            <img src="C:\Users\shilv\OneDrive\Documents\CODING\CV\B.png" alt="B Logo">
+            <div class="myself">
+                <H1>I'm Bernard Lie</H1>
+                <div class="p">
+                    <p>Website Designer based in Palembang, Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="quarter1">
+                <H1 style="color: antiquewhite;">Passionate Creating Great Experiences for Website Designing</H1>
+                <a href="https://wa.link/m8d1d2">Talk With Me</a>
+                <a href="#">See My Work</a>
+            </div>
+            <div class="quarter2">
+                <h2>Working Experiences</h2>
+                <div class="experiences">
+                    <img src="" alt="ig">Instagram-Cloning
+                    <img src="" alt="moodle">School Website
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">Project</section>
+    <section id="contact">
+        <div class="half1">
+            <h1>Send Me a Message</h1>
+            <input type="text"></form>
+            <input type="text"></form>
+            <input type="text"></form>
+            <input type="submit" value="Send Message" style="width: 150px; height: 35px; font-weight: bold;">
+        </div>
+        <div class="half2">
+            <h1 style="font-size: 30px;">Contact Information</h1>
+            <h2><img src="" alt="Logo"> +62 812 7124 0677</h2>
+            <h2><img src="" alt="Logo"> bernardlie425@gmail.com</h2>
+            <h2><img src="" alt="Logo"> Jl. Onglen No. 523A, Palembang, Indonesia</h2>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
